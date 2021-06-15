@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+
+          <title></title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+          
+     </head>
+     <body style="background-color: #313632; color: whitesmoke;">
+          <div class="container">
+
+               <center>
+                    <h3 class="btn btn-success header" >Object Identifier</h3>
+                    <br><br>
+              
+                    <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+                    <b class="b_tag">
+              
+                      Happy 
+              
+                      <hr>
+              
+                      Sad
+              
+                      <hr>
+              
+                      Angry
+              
+                      <hr>
+
+                      Suprised
+              
+                    </b>
+                    <label>Webcam View - </label>
+              
+                    <div id="webcam_view"></div>
+                    <br><br>
+              
+                    <div id="snap_div"></div>
+              
+                    <br><br>
+              
+                    <button type="button" class="btn btn-info" onclick="capture()">Capture the Image</button>
+                    <br><br>
+                    <button type="button" class="btn btn-warning" onclick="Identity()">Identify the Image</button>
+                    <br><br>
+                    
+                    <p style="font-size: 22px;">Object :  <span id=" result_obj"></span></p>
+                    <p style="font-size: 22px;">Accuracy :  <span id="accuracy"></span></p>
+                    
+                  </center>
+              
+                
+
+          </div>
+     </body>
+</html>
